@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تاریخ جهان</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem 0;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+        }
+        
+        .creator {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        
+        .nav {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .nav-list a {
+            text-decoration: none;
+            color: #34495e;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-list a:hover {
+            background: #3498db;
+            color: white;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        
+        .timeline {
+            margin-top: 1rem;
+        }
+        
+        .timeline-item {
+            margin-bottom: 1rem;
+            padding-right: 1rem;
+            border-right: 3px solid #3498db;
+        }
+        
+        .year {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        
+        footer {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-list {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 تاریخ جهان</h1>
+            <p class="subtitle">سفری در زمان از آغاز تا به امروز</p>
+            <p class="creator">سازنده: کیارش سهولی</p>
+        </header>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#iran">تاریخ ایران باستان</a></li>
+                <li><a href="#space">تاریخ ستاره‌ها و فضا</a></li>
+                <li><a href="#world">تاریخ جهان</a></li>
+                <li><a href="#science">تاریخ علم</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <section id="iran" class="section">
+                <h2>🏛️ تاریخ ایران باستان</h2>
+                <p>تمدن کهن ایران باستان، یکی از درخشان‌ترین تمدن‌های جهان</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">۵۵۰ پیش از میلاد:</span>
+                        <p>تأسيس شاهنشاهی هخامنشی به دست کوروش بزرگ</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">۳۳۰ پیش از میلاد:</span>
+                        <p>پایان امپراتوری هخامنشی با حمله اسکندر مقدونی</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">۲۲۴ پس از میلاد:</span>
+                        <p>شکل‌گیری امپراتوری ساسانی توسط اردشیر بابکان</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">۶۵۱ پس از میلاد:</span>
+                        <p>سقوط امپراتوری ساسانی و آغاز دوره اسلامی</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="space" class="section">
+                <h2>🌌 تاریخ ستاره‌ها و فضا</h2>
+                <p>کشف اسرار کیهان از دوران باستان تا عصر فضا</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">۱۵۴۳ میلادی:</span>
+                        <p>نیکلاس کوپرنیک نظریه مرکزیت خورشید را مطرح کرد</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">۱۶۰۹ میلادی:</span>
+                        <p>گالیله اولین تلسکوپ نجومی را ساخت</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">۱۹۵۷ میلادی:</span>
+                        <p>شوروی اسپوتنیک-۱، اولین ماهواره را به فضا پرتاب کرد</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">۱۹۶۹ میلادی:</span>
+                        <p>نیل آرمسترانگ اولین انسانی شد که روی ماه قدم گذاشت</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="world" class="section">
+                <h2>🌍 تاریخ جهان</h2>
+                <p>نقاط عطف تاریخ بشریت در سراسر جهان</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">۳۲۰۰ پیش از میلاد:</span>
+                        <p>اختراع خط در میان‌رودان</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">۴۷۶ میلادی:</span>
+                        <p>سقوط امپراتوری روم غربی</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">۱۴۹۲ میلادی:</span>
+                        <p>کشف قاره آمریکا توسط کریستف کلمب</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">۱۹۴۵ میلادی:</span>
+                        <p>پایان جنگ جهانی دوم</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="science" class="section">
+                <h2>🔬 تاریخ علم</h2>
+                <p>دستاوردهای شگفت‌انگیز علمی بشر</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">۱۶۸۷ میلادی:</span>
+                        <p>ایزاک نیوتن قوانین حرکت و گرانش را منتشر کرد</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">۱۸۵۹ میلادی:</span>
+                        <p>چارلز داروین نظریه تکامل را ارائه داد</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">۱۹۰۵ میلادی:</span>
+                        <p>آلبرت اینشتین نظریه نسبیت خاص را مطرح کرد</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">۱۹۵۳ میلادی:</span>
+                        <p>کشف ساختار DNA توسط واتسون و کریک</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h3>📜 "Those who cannot remember the past are condemned to repeat it"</h3>
+            <p> - George Santayana</p>
+            <p style="margin-top: 1rem;">© ۲۰۲۴ تاریخ جهان - طراحی و توسعه توسط کیارش سهولی</p>
+        </footer>
+    </div>
+</body>
+</html>
